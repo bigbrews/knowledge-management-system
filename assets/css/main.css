@@ -24,3 +24,10 @@ body {
     font-size: 60px;
 
 }
+
+.account_box {
+
+    display: block;
+    width: 30%;
+    margin: auto;
+}
