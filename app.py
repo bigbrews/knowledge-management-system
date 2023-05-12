@@ -14,5 +14,9 @@ def log_in():
 def register():
     return render_template('logged_out/register.html')
 
+@app.route('/selection')
+def selection():
+    return render_template('logged_in/selection.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
