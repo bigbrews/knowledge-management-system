@@ -9,8 +9,8 @@
     <!-- Codename: Epi-->
     <title>Episteme</title>
 
-    <!-- Import CSS from assets/css/main.css -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Import CSS from static/css/main.css -->
+    <link rel="stylesheet" href="static/css/main.css">
 
 </head>
 
@@ -20,7 +20,7 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://github.com/bigbrews/knowledge-management-system">
-                <img src="assets/images/navbar/Episteme-logo.png"
+                <img src="static/images/navbar/Episteme-logo.png"
                     alt="Episteme: A Knowledge Management System For Sorting Theses Knowledge" width="112" height="28">
             </a>
 
@@ -32,10 +32,10 @@
 
         <h1 class="title home_title">Welcome to Episteme!</h1>
 
-        <a href="logged_out/register.html">
+        <a href="{{ url_for('register') }}">
             <button class="button is-light is-medium">Register</button>
         </a>
-        <a href="logged_out/log_in.html">
+        <a href="{{ url_for('log_in') }}">
             <button class="button is-light is-medium">Log In</button>
         </a>
 
