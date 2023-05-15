@@ -18,5 +18,9 @@ def register():
 def selection():
     return render_template('logged_in/selection.html')
 
+@app.route('/submission_form')
+def submission_form():
+    return render_template('logged_in/homepage/submission_form.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
