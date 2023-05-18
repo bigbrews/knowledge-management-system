@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,33 +10,73 @@
     <link rel="stylesheet" href="/static/css/main.css">
 
 </head>
+
 <body>
-    
-<!-- Navbar -->
-<nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <a class="navbar-item" href="https://github.com/bigbrews/knowledge-management-system">
-            <img src="static/images/navbar/Episteme-logo.png"
-                alt="Episteme: A Knowledge Management System For Sorting Theses Knowledge" width="112" height="28">
-        </a>
 
-    </div>
-</nav> 
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://github.com/bigbrews/knowledge-management-system">
+                <img src="static/images/navbar/Episteme-logo.png"
+                    alt="Episteme: A Knowledge Management System For Sorting Theses Knowledge" width="112" height="28">
+            </a>
 
-    <div class="selection">
-        
-        test123
+        </div>
+    </nav>
 
-    </div>
+    <<<<<<< HEAD <section class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="columns is-centered is-vcentered">
+                    <div class="column is-half">
+                        <div class="buttons is-centered">
+                            <a href="{{ url_for('submission_form') }}">
+                                <div class="selection">
+                                    <button class="button is-primary is-fullwidth is-large"
+                                        style="width: 200px; margin-right: 30px;">
+
+                                        SUBMIT
+
+                                    </button>
+                                </div>
+                            </a>
+
+                            <a href="{{ url_for('knowledge_library') }}">
+                                <div class="selection">
+                                    <button class="button is-primary is-fullwidth is-large" style="width: 200px;">
+
+                                        VIEW
+
+                                    </button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        =======
+        <div class="buttons justify-content-center">
+            <a href="{{ url_for('submission_form') }}">
+                <div class="selection">
+                    <button class="button is-primary is-fullwidth is-large" style="width: 200px; margin-right: 30px;">
+                        SUBMIT
+                    </button>
+                </div>
+            </a>
 
 
-    <a href="https://google.com">
-    <div class="selection">
-    
-        test1234
-
-    </div>
-</a>
+            <a href="{{ url_for('knowledge_library') }}">
+                <div class="selection">
+                    <button class="button is-primary is-fullwidth is-large" style="width: 200px;">
+                        VIEW
+                    </button>
+                </div>
+            </a>
+        </div>
+        >>>>>>> parent of a23e896 (feat: update button links)
 
 </body>
+
 </html>
