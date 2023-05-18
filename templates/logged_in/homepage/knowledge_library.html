@@ -56,17 +56,114 @@
 
 </nav>
 
-<figure class="image is-3by1" style="margin-bottom: 10px;">
-    <img class="" src="https://bulma.io/images/placeholders/1280x960.png">
-</figure>
+<section class="hero is-link">
+    <div class="hero-body">
+        <p class="title">
+            Knowledge Library
+        </p>
+        <p class="subtitle">
+            The place where you can search student theses.
+        </p>
+    </div>
+</section>
+
+<div class="field has-addons" style="margin: 20px;">
+    <p class="control">
+        <span class="select">
+            <select>
+                <option>Thesis</option>
+                <option>Project</option>
+            </select>
+        </span>
+    </p>
+    <p class="control is-expanded">
+        <input class="input" type="text" placeholder="Search keywords (separated by comma)">
+    </p>
+    <p class="control">
+        <a class="button">
+            Search
+        </a>
+    </p>
+</div>
 
 
-<div class="columns" style="margin-left: 50px; margin-right: 50px">
+<div class="columns" style="margin-left: 20px; margin-right: 20px">
 
     <!-- Submission Form -->
-    <div class="column is-narrow">
+    <div class="column is-narrow" style="border: 1px solid black;">
 
-        <h1 class="title">Filter</h1>
+        <form>
+
+            <h1 class=" title">Search Filter</h1>
+            <label class="label">By School</label>
+            <div class="field">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Senior High School
+                </label>
+            </div>
+            <div class="field">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    School of Architecture
+                </label>
+            </div>
+            <div class="field">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    School of Computing and Information Technologies
+                </label>
+            </div>
+            <div class="field">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    School of Engineering
+                </label>
+            </div>
+            <div class="field">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    School of Management
+                </label>
+            </div>
+            <div class="field">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    School of Multimedia Arts
+                </label>
+            </div>
+            <div class="field">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Graduate School
+                </label>
+            </div>
+
+            <label class="label">By Year</label>
+            <div class="field">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    2023
+                </label>
+            </div>
+            <div class="field">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    2022
+                </label>
+            </div>
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-link">Update Filters</button>
+                </div>
+                <div class="control">
+                    <button class="button is-link is-light">Reset Filters</button>
+                </div>
+            </div>
+
+        </form>
+
     </div>
 
     <div class="column">
