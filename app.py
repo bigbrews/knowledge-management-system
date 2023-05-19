@@ -33,7 +33,7 @@ def knowledge_library():
 # Admins route
 
 @app.route('/admin')
-def knowledge_library():
+def admin():
     return render_template('logged_in/admin/admin.html')
 
 if __name__ == '__main__':
