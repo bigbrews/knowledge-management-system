@@ -37,19 +37,19 @@ body {
 
     display: block;
     width: 30%;
-    margin: auto; 
+    margin: auto;
 
 }
 
 .card-content {
     height: 700px;
 }
-  
+
 .level-item {
     position: absolute;
     bottom: 0;
 }
 
-.columns {
+.selection-columns {
     align-items: center;
 }
