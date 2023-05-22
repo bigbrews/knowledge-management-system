@@ -36,10 +36,12 @@ body {
 .selection {
 
     display: block;
-    width: 30%;
+    width: 22%;
     margin: auto;
 
 }
+
+/*change names of classes below */
 
 .card-content {
     height: 700px;
@@ -50,6 +52,4 @@ body {
     bottom: 0;
 }
 
-.selection-columns {
-    align-items: center;
-}
+
