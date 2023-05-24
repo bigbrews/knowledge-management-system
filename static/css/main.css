@@ -31,25 +31,28 @@ body {
     display: block;
     width: 30%;
     margin: auto;
+
 }
 
 .selection {
 
     display: block;
-    width: 22%;
-    margin: auto;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 
-/*change names of classes below */
+.selection-card-content {
 
-.card-content {
     height: 700px;
-}
 
-.level-item {
+}           
+
+.selection-level-item {
+
     position: absolute;
     bottom: 0;
+
 }
 
 
