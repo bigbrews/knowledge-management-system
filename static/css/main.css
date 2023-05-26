@@ -42,13 +42,14 @@ body {
 
 }
 
-.selection-card-content {
+/*test */
+.card-content {
 
     height: 700px;
 
 }           
 
-.selection-level-item {
+.level-item {
 
     position: absolute;
     bottom: 0;
