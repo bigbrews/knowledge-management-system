@@ -31,12 +31,29 @@ body {
     display: block;
     width: 30%;
     margin: auto;
+
 }
 
 .selection {
 
     display: block;
-    width: 30%;
-
+    flex-direction: column;
+    justify-content: space-between;
 
 }
+
+/*test */
+.card-content {
+
+    height: 700px;
+
+}           
+
+.level-item {
+
+    position: absolute;
+    bottom: 0;
+
+}
+
+
