@@ -92,42 +92,43 @@
     <!-- Submission Form -->
     <div class="column is-narrow" style="border: 1px solid black;">
 
-        <form>
+        <form method="POST" action="/submit_form">
 
             <h1 class="title">Submission Form</h1>
 
             <div class="field">
                 <label class="label">Thesis Title</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="Thesis Title">
+                    <input class="input" type="text" placeholder="Thesis Title" name="thesis_title">
                 </div>
             </div>
 
             <div class="field">
                 <label class="label">Group Name</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="Group Name">
+                    <input class="input" type="text" placeholder="Group Name" name="group_name">
                 </div>
             </div>
 
             <div class="field">
                 <label class="label">Professor Name</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="Professor Name">
+                    <input class="input" type="text" placeholder="Professor Name" name="professor_name">
                 </div>
             </div>
 
             <div class="field">
                 <label class="label">Submission Date</label>
                 <div class="control">
-                    <input class="input" type="date" placeholder="Submission Date">
+                    <input class="input" type="date" placeholder="Submission Date" name="submission_date">
                 </div>
             </div>
 
             <div class="field">
                 <label class="label">Abstract/Description</label>
                 <div class="control">
-                    <textarea class="textarea has-fixed-size" placeholder="Abstract/Description"></textarea>
+                    <textarea class="textarea has-fixed-size" placeholder="Abstract/Description"
+                        name="abstract"></textarea>
                 </div>
             </div>
 
@@ -155,15 +156,15 @@
                 <label class="label">School</label>
                 <div class="control">
                     <div class="select">
-                        <select>
+                        <select name="school">
                             <option disabled selected>Select School</option>
-                            <option>Senior High School</option>
-                            <option>School of Architecture</option>
-                            <option>School of Computing and Information Technologies</option>
-                            <option>School of Engineering</option>
-                            <option>School of Management</option>
-                            <option>School of Multimedia Arts</option>
-                            <option>Graduate School</option>
+                            <option value="SHS">Senior High School</option>
+                            <option value="SoAR">School of Architecture</option>
+                            <option value="SoCIT">School of Computing and Information Technologies</option>
+                            <option value="SoE">School of Engineering</option>
+                            <option value="SoM">School of Management</option>
+                            <option value="SoMA">School of Multimedia Arts</option>
+                            <option value="GS">Graduate School</option>
 
 
                         </select>
@@ -173,7 +174,7 @@
 
             <div class="field is-grouped">
                 <div class="control">
-                    <button class="button is-link">Submit</button>
+                    <button class="button is-link" type="submit">Submit</button>
                 </div>
                 <div class="control">
                     <button class="button is-link is-light">Clear Form</button>
