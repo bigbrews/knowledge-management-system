@@ -9,5 +9,10 @@ This project was created by the **Big Brews** consisting of three members with d
 |Member Name|Role|
 |---|---|
 |Christian Luis Esguerra|Developer/Documentation|
+<<<<<<< Updated upstream
 |Angelo John Benedict Laus|Developer/Documentation|
 |Joaquin Paolo Pacete|Team Leader/Developer|
+=======
+|Angelo John Benedict Laus|Development Lead|
+|Joaquin Paolo Pacete|Team Leader|
+>>>>>>> Stashed changes
