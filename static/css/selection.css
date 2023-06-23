@@ -1,0 +1,44 @@
+.selection {
+
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 9999;
+}
+
+.card-container .card {
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-container .card:hover {
+    transform: scale(1.05);
+}
+
+.card-content {
+
+    height: 700px;
+
+}
+
+.level-item {
+
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}

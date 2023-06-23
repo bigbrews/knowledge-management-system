@@ -8,35 +8,29 @@ body {
     height: 100vh;
     margin: 0px;
 
-}
-
-.home_div {
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-
-}
-
-.home_title {
-
-    font-size: 60px;
 
 }
 
 .account_box {
-
     display: block;
-    width: 30%;
+    width: 75%;
+    margin-top: 20% !important;
     margin: auto;
 }
 
-.selection {
+.hide {
+    display: none;
+}
 
-    display: block;
-    width: 30%;
+.table-container {
+    max-height: 600px;
+    overflow-y: auto;
+}
 
-
+.view-box-ni-luis {
+    min-width: 1000px;
+    margin-top: 50px !important;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
 }

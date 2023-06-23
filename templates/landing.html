@@ -1,0 +1,187 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Episteme</title>
+
+{% endblock %}
+
+{% block body %}
+
+<!-- Navbar -->
+<nav class="navbar is-light is-transparent" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="{{ url_for('index') }}" style="margin-left: 20px;">
+            <img src="static/img/navbar/Episteme-logo.png"
+                alt="Episteme: A Knowledge Management System For Sorting Theses Knowledge" width="112" height="40">
+        </a>
+
+    </div>
+    <div class="navbar-menu">
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <div style="margin-right: 20px; margin-bottom: 5px;">
+                        <p class="title is-6">Ready to contribute?</p>
+                    </div>
+                    <a class="button is-success" href="#" id="registerLink1" style="margin-right: 20px;">
+                        <strong>Register</strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</nav>
+
+<!-- Landing Page column -->
+<div class="columns" style="margin-bottom: -10px;">
+    <div class="column is-three-fifths">
+
+        <section class="hero is-fullheight is-link">
+            <div class="hero-body">
+                <div class="">
+                    <p class="title is-1" style="font-size: 60px;">
+                        Welcome to Episteme!
+                    </p>
+                    <p class="subtitle">
+                        Episteme is a Knowledge Management System for sorting theses knowledge.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <div class="column">
+
+        <div id="loginDiv">
+
+            <form method="POST" action="/login" class="box account_box">
+
+                <p class="title is-3" style="text-align: center;">Log In</p>
+
+                {% if success_message %}
+                <div id="error-message" class="field">
+                    <p class="help is-danger" style="font-size: 15px; color: lightgreen;">{{ success_message }}</p>
+                </div>
+                {% endif %}
+
+                <div class="field">
+                    <label class="label">Email Address</label>
+                    <div class="control">
+                        <input class="input" type="email" placeholder="Email Address" id="email_address"
+                            name="email_address" required>
+                    </div>
+                </div>
+
+                <div class="field">
+
+                    <div class="control">
+                        <label class="label">Password</label>
+                        <input class="input" type="password" placeholder="Password" id="password" name="password"
+                            required>
+                    </div>
+
+                </div>
+
+                <div class="field is-grouped">
+
+                    <div class="control">
+                        <button class="button is-success" type="submit">Submit</button>
+                    </div>
+
+                    {% if error_message %}
+                    <div id="error-message" class="field">
+                        <p class="help is-danger" style="font-size: 15px;">{{ error_message }}</p>
+                    </div>
+                    {% endif %}
+
+                </div>
+
+
+                <p>Don't have an account yet? <a href="" id="registerLink2">Sign up!</a></p>
+
+            </form>
+
+        </div>
+
+        <div id="registerDiv" style="display: none;">
+
+            <form method="POST" action="/register" class="box account_box">
+
+                <p class="title is-3" style="text-align: center;">Register</p>
+
+                {% if errorreg_message %}
+                <div id="error-message" class="field">
+                    <p class="help is-danger" style="font-size: 15px;">{{ errorreg_message }}</p>
+                </div>
+                {% endif %}
+
+                <div class="field">
+                    <label class="label">First Name</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="First Name" id="first_name" name="first_name"
+                            required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Last Name</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Last Name" id="last_name" name="last_name"
+                            required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Email Address</label>
+                    <div class="control">
+                        <input class="input" type="email" placeholder="Email Address" id="email_address"
+                            name="email_address" required>
+                    </div>
+                </div>
+
+                {% if registration_message %}
+                <div id="error-message" class="field">
+                    <p class="help is-danger" style="font-size: 15px;">{{ registration_message }}</p>
+                </div>
+                {% endif %}
+
+                <div class="field">
+
+                    <div class="control">
+                        <label class="label">Password</label>
+                        <input class="input" type="password" placeholder="Password" id="register-password"
+                            name="password" required>
+                    </div>
+
+                </div>
+
+
+
+                <div class="field is-grouped" style="padding-top: 2%;">
+
+                    <div class="control">
+                        <button class="button is-success" type="submit" id="submitBtn">Submit</button>
+                    </div>
+
+                </div>
+
+
+                <p>Already have an account? <a href="#" id="loginLink">Log in!</a></p>
+
+            </form>
+
+        </div>
+
+
+    </div>
+</div>
+
+
+<script src="static/js/landing.js"></script>
+
+{% endblock %}
